@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 [System.Serializable]
 public class LocationsLoadedEvent : UnityEvent<List<Location>>
 {
@@ -37,8 +40,9 @@ public class JSONController : MonoBehaviour
     }
 
     void processJSONData(string data) {
-        JSONData jsonData = JsonUtility.FromJson<JSONData>(data);
+        JSONData jsonData = JsonConvert.DeserializeObject<JSONData>(data);
         Locations = jsonData.locations;
+        Debug.Log(Locations[0].timelines.confirmed.GetHistory()[0].date.ToString());
         OnDataLoaded.Invoke(Locations);
     }
 }

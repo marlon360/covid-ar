@@ -1710,7 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c8935c09abf4db68119257624d3827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  URL: https://coronavirus-tracker-api.herokuapp.com/v2/locations
+  URL: https://coronavirus-tracker-api.herokuapp.com/v2/locations?timelines=true
   OnDataLoaded:
     m_PersistentCalls:
       m_Calls: []
