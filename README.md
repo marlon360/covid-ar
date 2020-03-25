@@ -2,8 +2,15 @@
 
 <img src="Media/capture.gif" style="width: 100%; max-width: 800px;"></img>
 
-This app lets you display the current spread of covid-19 in augmented reality.
+This app lets you display the current spread of covid-19 in augmented reality with real-time data.
 You can place a globe and look at regions. When you tap on a country, you can view more details.
+
+## Data Source
+
+We are using the API from this project: https://github.com/ExpDev07/coronavirus-tracker-api
+
+It uses the data by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
+The data is updated every hour.
 
 ## Demo Video on YouTube
 
